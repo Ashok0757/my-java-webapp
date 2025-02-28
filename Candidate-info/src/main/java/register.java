@@ -66,7 +66,7 @@ public class register extends HttpServlet {
 	            Class.forName("com.mysql.cj.jdbc.Driver");
 	            
 	            // Connect to database
-	            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/candidate_db", "root", "Ashok@1230");
+	            conn = DriverManager.getConnection("jdbc:mysql://gondola.proxy.rlwy.net:53305/railway", "root", "kuzIykvbMXjlMbQfdeaiLkGpAcNwvTVU");
 	            
 	            // Insert query
 	            String query = "INSERT INTO candidates (name, dob, gender, father_name, mother_name, location, email, phone, qualification, college, passout_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -106,3 +106,4 @@ public class register extends HttpServlet {
 	    }
 	}
 
+ 
